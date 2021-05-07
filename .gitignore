@@ -1,0 +1,6 @@
+Rescate/ejemplos/.ipynb_checkpoints/
+Ejemplosbasicos/__pycache__/
+Ejemplosbasicos/.ipynb_checkpoints/
+*.zip
+.ipynb_checkpoints/
+.vscode/
