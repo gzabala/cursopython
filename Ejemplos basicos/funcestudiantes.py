@@ -135,5 +135,7 @@ def invertir_palabras(cadena):
         cadenainvertida = cadenainvertida + " " + palabra[::-1]
     return cadenainvertida.strip()
 
-cadena="Esto es un ejemplo"
-print(invertir_palabras(cadena))
+# cadena="Esto es un ejemplo"
+# print(invertir_palabras(cadena))
+
+
