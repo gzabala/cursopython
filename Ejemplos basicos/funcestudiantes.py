@@ -139,3 +139,55 @@ def invertir_palabras(cadena):
 # print(invertir_palabras(cadena))
 
 
+def contarDigitos(cadena):
+    digitos=0
+    for i in cadena:
+        if i.isdigit():
+            digitos+=1
+    return digitos
+
+def cantidad_de_digitos(cadena):
+    cantidaddedigitos=0
+    for palabra in cadena.split():
+        if palabra.isnumeric():
+            cantidaddedigitos+=len(palabra)
+    return cantidaddedigitos
+
+# print(contarDigitos("Acá tenemos 223 dígi333to00s"))
+# print(cantidad_de_digitos("Acá tenemos 223 dígi333to00s"))
+
+def encontrar_caros(cantidad, *lista):
+    listaordenada = sorted(lista, key=lambda i: i["pre"], reverse=True)
+    return listaordenada[:cantidad]
+    
+ 
+# print(encontrar_caros(2,{"prod":"pan", "pre": 100}, {"prod":"arroz", "pre": 50}, {"prod":"leche", "pre": 90}, {"prod":"carne", "pre": 300}))
+# print(encontrar_caros(5,[{"prod":"pan", "pre": 100}, {"prod":"arroz", "pre": 50}, {"prod":"leche", "pre": 90}, {"prod":"carne", "pre": 300}]))
+# print(encontrar_caros(1,[{"prod":"pan", "pre": 100}, {"prod":"arroz", "pre": 50}, {"prod":"leche", "pre": 90}, {"prod":"carne", "pre": 300}]))
+# print(encontrar_caros(0,[{"prod":"pan", "pre": 100}, {"prod":"arroz", "pre": 50}, {"prod":"leche", "pre": 90}, {"prod":"carne", "pre": 300}]))
+
+
+def segundaOcurrencia(c1, c2):
+    import re
+    l2= [m.start() for m in re.finditer(c2, c1)]
+    if (len(l2)>=2):
+         return (l2[1])
+    else:
+         return None
+
+# s1 = 'Esta es una frase que queremos encontrar'
+# s2 = 'que'
+# print(segundaOcurrencia(s1,s2))
+
+def busco_cadena(cadena1,cadena2):
+    if cadena1.count(cadena2) <= 1:
+        retorno="None"
+    else:
+        indice=cadena1.find(cadena2)+1
+        retorno=cadena1.find(cadena2,indice)
+    return retorno
+
+# print(busco_cadena("Esto es una estatua", "st"))
+s1 = 'Esta es una frase que queremos encontrar'
+s2 = 'que'
+print(busco_cadena(s1,s2))
