@@ -191,3 +191,5 @@ def busco_cadena(cadena1,cadena2):
 s1 = 'Esta es una frase que queremos encontrar'
 s2 = 'que'
 print(busco_cadena(s1,s2))
+
+
