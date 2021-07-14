@@ -16,4 +16,4 @@
 # print(cuadradoPerfecto(36)) #4
 # print(cuadradoPerfecto(34)) #5
 # print(fu3.enElMismoOrden("Los dinosaurios se extinguieron hace unos años", ["se", "años"])) #6
-# print(enElMismoOrden("Los dinosaurios se extinguieron hace unos años", ["se", "años"])) #6
+# print(enElMismoOrden("Los dinosaurios se extinguieron hace unos años", ["se", "años"])) #7
