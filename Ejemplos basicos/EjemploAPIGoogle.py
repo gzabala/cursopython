@@ -55,5 +55,6 @@ def main():
         num+=1
 
     archivo.close()
+    
 if __name__ == "__main__":
     main()
