@@ -1,4 +1,4 @@
-import cv2
+from cv2 import cv2
 import numpy as np
 import mediapipe as mp
 mp_face_detection = mp.solutions.face_detection

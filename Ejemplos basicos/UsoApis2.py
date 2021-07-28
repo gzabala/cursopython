@@ -7,10 +7,11 @@ import json
 # resp=requests.get(url)
 # if resp:
 #     dicc=resp.json()
-#     for ind in range(0,3):
+#     # print(dicc)
+#     for ind in range(0,4):
 #         print(f"El indicador {dicc[ind]['indicador']} tiene un valor de {dicc[ind]['valor']}")
 
-print("-----------")
+# print("-----------")
 
 client_id="d020eaa6cb044625b0e3efc7244d2e7f"
 client_secret="688c168E273b4d11Ae7E414131062dA0"
@@ -23,7 +24,7 @@ resp=requests.get(url, params=data)
 if resp:
     dicc=resp.json()
     for estacion in dicc['data']['stations']:
-        if "Oro" in estacion['address']:
+        if "Bulnes" in estacion['address']:
             direccion=estacion['address']
             nroEstacion=estacion['station_id']
             break
